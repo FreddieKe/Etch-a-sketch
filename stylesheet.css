@@ -1,0 +1,29 @@
+div {
+    display: flex;
+}
+.squaresContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.center-bar {
+    width:700px;
+    justify-content: center;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.master {
+    justify-content: center;
+}
+
+.right-sidebar,
+.left-sidebar {
+    flex: 1 1 auto;
+}
+
+.mid {
+    flex: 1 1 0;
+}
