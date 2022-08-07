@@ -1,6 +1,11 @@
 div {
     display: flex;
 }
+
+button {
+    padding: 30px;
+    margin: 30px;
+}
 .squaresContainer {
     flex-direction: column;
     justify-content: center;

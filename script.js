@@ -1,5 +1,6 @@
 //variables
 let squaresNumber = 100;
+let rainbowMode = 0;
 
 //functions
 function makeGrid() {
@@ -21,12 +22,11 @@ function makeGrid() {
         container.append(row);
         const gridBoxes = document.querySelectorAll('.gridBox'); //draw functionality
         Array.from(gridBoxes).forEach(gridBox =>
-            gridBox.addEventListener('mouseover', function(){
+            gridBox.addEventListener('click', function(){
             gridBox.style.backgroundColor = 'red';
             })
         )
-
-        }}
+    }}
 
 function deleteGrid() {
     const rows = document.querySelectorAll('.row');
@@ -35,9 +35,7 @@ function deleteGrid() {
         container.removeChild(row))
     }
         
-
 makeGrid(); //draw initial grid
-
 
 const resetButton = document.querySelector('button'); //reset button
 resetButton.addEventListener('click', function() {
